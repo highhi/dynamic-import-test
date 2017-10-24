@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * { margin: 0; padding: 0; }
+    ul { list-style: none; }
+
+    .list-1-item,
+    .list-2-item {
+      width: 300px;
+      height: 300px;
+      background-color: #ccc;
+      margin: 0 10px 10px 0;
+      opacity: 0;
+      transition: opacity 2s linear;
+    }
+
+    .list-1-item.is-active,
+    .list-2-item.is-active {
+      opacity: 1;
+    }
+
+    .tabs {
+      display: flex;
+    }
+
+    [role="tab"] {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .panels {
+      display: flex;
+      justify-content:space-between;
+    }
+
+    [aria-hidden="false"] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <ul class="tabs">
+    <li aria-controls="panel-1" role="tab">Tab-1</li>
+    <li aria-controls="panel-2" role="tab">Tab-2</li>
+  </ul>
+  <div class="panels">
+    <ul id="panel-1" role="tabpanel" class="list-1" aria-hidden="true">
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+      <li class="list-1-item"></li>
+    </ul>
+
+    <ul id="panel-2" role="tabpanel" class="list-2" aria-hidden="false">
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+      <li class="list-2-item"></li>
+    </ul>
+  </div>
+  <script src="./dist/index.bundle.js"></script>
+</body>
+</html>
